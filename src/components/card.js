@@ -47,6 +47,10 @@ const Card = (article) => {
   imgContainer.appendChild(pic)
   articleAuthor.appendChild(byLine)
 
+  articleCard.addEventListener('click', e => {
+    console.log(article.headline)
+  })
+
   return articleCard
 }
 
